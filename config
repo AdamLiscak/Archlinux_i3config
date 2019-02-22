@@ -178,12 +178,14 @@ exec_always xrandr -s 1360x768
 exec_always feh --bg-scale ~/Downloads/desktopimage.jpg
 exec_always setxkbmap de
 exec_always compton
-
 #remove window titlebar
-new_window 1pixel
+for_window [class="^.*"] border pixel 1
 #mkgaps
 bindsym $mod+o		                                gaps inner current plus 5
 bindsym $mod+Shift+o		                        gaps inner current minus 5
+#color
+# class                 border  backgr. text    indicator 
+ client.focused #555555 #555555 #ffffff #2e9ef4     #A91111
 
 
 
