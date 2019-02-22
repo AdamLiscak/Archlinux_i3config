@@ -177,6 +177,7 @@ bar {
 exec_always xrandr -s 1360x768
 exec_always feh --bg-scale ~/Downloads/desktopimage.jpg
 exec_always setxkbmap de
+exec_always compton
 
 #remove window titlebar
 new_window 1pixel
